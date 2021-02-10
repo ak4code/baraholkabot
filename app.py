@@ -8,7 +8,7 @@ load_dotenv()
 bot = telebot.TeleBot(os.getenv("TOKEN"))
 
 def baner_maker(text):
-    im = Image.open("template.jpg")
+    im = Image.open("./template.jpg")
     xsize, ysize = im.size
     font = ImageFont.truetype("./fonts/Roboto-Medium.ttf", 70)
     d = ImageDraw.Draw(im)
